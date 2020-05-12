@@ -1,47 +1,22 @@
-一键脚本安装shadowsocks/shadowsocksR/V2Ray + 开启bbr
----
+# 1.下载一键搭建ss脚本文件
+如果提示 bash: git: command not found，则先安装git：
+ Centos执行这个： yum -y install git
+ Ubuntu/Debian执行这个： apt-get update && apt-get -y install git
+ 
+# 2.运行搭建ss脚本代码
 
-一键脚本搭建shadowsocks/shadowsocksR/V2Ray + 设置开启自启动 + 升级内核&开启bbr加速。
+ss-fly/ss-fly.sh -i 密码 端口(默认1024）
 
-## 教程如何访问
+# 3.相关操作
 
-[Suniceman小站](https://suniceman.com/2019/04/10/install-shadowsocks-in-one-command/)
-
-## 支持系统
-
-CentOS 6+
-
-Debian 7+
-
-Ubuntu 12+
-
-## 使用教程
-
-一键搭建ss/ssr：[一键脚本搭建shadowsocks+开启bbr](https://suniceman.com/2019/04/10/install-shadowsocks-in-one-command/)
-
-## 推荐的VPS
-
-### 国外VPS
-
-[Vultr优惠网](https://www.vultryhw.cn/)
-
-[搬瓦工优惠网](https://www.bwgyhw.cn/)
-
-### 国内VPS
-
-[阿里云优惠网](https://www.aliyunyhw.com)
-
-[腾讯云优惠网](https://www.tengxunyunyhw.com)
-
-### VPS信息汇总
-
-[VPS GO](https://www.vpsgo.com)
-
-### 交流、客户端下载、加入交流讨论群（备注ss-fly否则不通过） 
- [![VCRQv4.th.jpg](https://s2.ax1x.com/2019/05/23/VCRQv4.th.jpg)](https://imgchr.com/i/VCRQv4)
+ 启动：/etc/init.d/ss-fly start
+ 停止：/etc/init.d/ss-fly stop
+ 重启：/etc/init.d/ss-fly restart
+ 状态：/etc/init.d/ss-fly status
+ 查看ss链接：ss-fly/ss-fly.sh -sslink
+ 修改配置文件：vim /etc/shadowsocks.json
+ 卸载：ss-fly/ss-fly.sh -uninstall
+ 
 
 
-### 感谢支持
-
-如果喜欢的话可以帮忙点个 `star` 感谢支持 
 
