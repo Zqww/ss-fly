@@ -1,6 +1,8 @@
 # 1.下载一键搭建ss脚本文件
 如果提示 bash: git: command not found，则先安装git：
+
  Centos执行这个： yum -y install git
+ 
  Ubuntu/Debian执行这个： apt-get update && apt-get -y install git
  
 # 2.运行搭建ss脚本代码
